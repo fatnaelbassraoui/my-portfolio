@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #050816;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+}
+
+
+.bg-dark{
+    background-color: rgb(16, 12, 34);
+    opacity: 0.9;
+}
+
+.bg-hero {
+    background-image: url('./Assets/herobg.png');
+}
+
+.border-secondary{
+    border-color: rgb(170 166 195)
+}
+.bg-secondary{
+    background-color: rgb(170 166 195)
+}
+.bg-tertiary{
+    background-color: rgb(16, 12, 48);
+}
+
+/* per la linea laterale del'hero */
+.pink-gradient {
+    background: #ee4da8;
+    background: linear-gradient(-90deg, #ee4da6 0%, rgba(60, 51, 80, 0) 100%);
+    background: -webkit-linear-gradient(-90deg,
+            #ee4db8 0%,
+            rgba(60, 51, 80, 0) 100%);
+}
+
+/* le skills cards*/
+.green-pink-gradient {
+    background: "#00cea8";
+    background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+    background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+.skills{
+    background-color: #151030;
+}
+.black-gradient {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,
+            #434343,
+            #373434);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,
+            #434343,
+            #373434);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
