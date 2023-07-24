@@ -2,11 +2,9 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { staggerContainer } from "../Utils/Motion";
 
-{
-  /*questo componente finge da wrapper a tutti gli alti componenti permettendoci di dargli lo stesso margine e renderli centrali.
-questo componenete mi ritorna un'altra function. IdName mi pemetterà di navigare nelle varie sezioni(about ecc.)
-*/
-}
+//questo componente finge da wrapper a tutti gli alti componenti permettendoci di dargli lo stesso margine e renderli centrali.
+//questo componenete mi ritorna un'altra function. IdName mi pemetterà di navigare nelle varie sezioni(about ecc.)
+
 const SectionWrapper = (Component, idName) =>
   function HOC() {
     return (

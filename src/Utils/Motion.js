@@ -15,7 +15,7 @@ export const textVariant = (delay) => {
         },
     };
 };
-{/* fade in (dissolvenza) dal lato destro , , delay 0.5* moltiplicato per ogni index, e infine la direction*/ }
+// fade in (dissolvenza) dal lato destro , , delay 0.5* moltiplicato per ogni index, e infine la direction
 export const fadeIn = (direction, type, delay, duration) => {
     return {
         hidden: {
