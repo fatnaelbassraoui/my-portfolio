@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { CV } from "../Assets";
+import { socialContacts } from "../constants/links";
+import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-
 const containerContactVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -95,7 +95,7 @@ const Contact = () => {
         animate={controls}
         variants={containerContactVariants}
         initial="hidden"
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl "
+        className="flex-[0.75] bg-black-100  rounded-2xl ml-6 "
       >
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
@@ -146,36 +146,25 @@ const Contact = () => {
           </button>
         </form>
       </motion.div>
+
+
       <motion.div
         ref={ref}
         animate={controls}
         variants={containerContactVariants}
         initial="hidden"
-        className="flex justify-center items-center"
-      >
-        <button className="rounded-full bg-tertiary w-36 h-12">
-          <a href={CV} download>
-            Download CV
-          </a>
-        </button>
-      </motion.div>
-
-      {/* <motion.div
-        ref={ref}
-        animate={controls}
-        variants={containerContactVariants}
-        initial="hidden"
-        className="flex  justify-center  items-center gap-10"
+        className="flex  justify-center  items-center w-[400px]  mr-10"
       >
         {socialContacts.map((social) => (
-
-          <img
-            src={social.image}
-            className="w-12 h-12"
-            alt="tech" />
+          <Link to={social.link}>
+            <img
+              src={social.image}
+              className="w-14 h-14"
+              alt="tech" />
+          </Link>
 
         ))}
-      </motion.div> */}
+      </motion.div>
     </div>
   );
 };

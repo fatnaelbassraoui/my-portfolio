@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import { CV } from "../Assets";
 
 const Hero = () => {
     return (
@@ -50,9 +51,25 @@ const Hero = () => {
                         <br />
                         and looking for a junior dev position.
                     </motion.p>
+                    <motion.div
+                        initial={{ x: -1000 }}
+                        animate={{ x: 0 }}
+                        transition={{
+                            duration: 2, //2 second is the duration of transition
+                            delay: 0.5,
+                        }}
+                        whileHover={{ opacity: 0.4 }}
+                        className="flex justify-start items-center mt-20"
+                    >
+                        <button className="rounded-full bg-tertiary w-36 h-12">
+                            <a href={CV} download>
+                                Download CV
+                            </a>
+                        </button>
+                    </motion.div>
                 </div>
             </div>
-            {/* <Computers /> */}
+
             {/*creo il button per lo scroll */}
             <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
                 <a href="#about">
