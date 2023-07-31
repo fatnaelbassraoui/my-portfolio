@@ -1,6 +1,4 @@
 import {
-  instagram,
-  facebook,
   linkedin,
   creator,
   web,
@@ -216,19 +214,6 @@ const socialContacts = [
     image: linkedin,
     link: "https://www.linkedin.com/in/fatna-el-bassraoui-830894261/",
   },
-  // {
-  //   name: "facebook",
-
-  //   image: facebook,
-  //   link: "https://www.facebook.com/cristina.benedetti.9862",
-  // },
-  // {
-  //   name: "instagram",
-
-  //   image: instagram,
-  //   link: "https://www.instagram.com/fatyelba/",
-  // }
-
 ]
 
 export { skills, technologies, projects, projects2, socialContacts };
