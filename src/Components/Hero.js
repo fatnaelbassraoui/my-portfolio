@@ -58,10 +58,10 @@ const Hero = () => {
                             duration: 2, //2 second is the duration of transition
                             delay: 0.5,
                         }}
-                        whileHover={{ opacity: 0.4 }}
+                        whileHover={{ opacity: 0.7 }}
                         className="flex justify-start items-center mt-20"
                     >
-                        <button className="rounded-full bg-tertiary w-36 h-12">
+                        <button className="rounded-full heroBtn w-36 h-12">
                             <a href={CV} download>
                                 Download CV
                             </a>

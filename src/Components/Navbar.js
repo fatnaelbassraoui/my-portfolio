@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { navLinks } from "../constants/links";
 import { menu } from '../Assets';
 import { close } from '../Assets';
 import { logo } from "../Assets";
+
+
 
 const Navbar = () => {
     const [active, setActive] = useState("");
@@ -31,7 +32,9 @@ const Navbar = () => {
             }
         >
             <div className="w-full flex justify-between items-center mx-auto">
-                <Link
+
+                {/*logo div */}
+                <div
                     to="/"
                     className="flex items-center gap-2"
                     onClick={() => {
@@ -45,7 +48,12 @@ const Navbar = () => {
                         {/*&nbsp; is used to create space between the elements */}
                         <span className="sm:block">El bassraoui</span>
                     </p>
-                </Link>
+                </div>
+
+
+
+                {/*nav links */}
+
                 <ul className="list-none hidden sm:flex flex-row gap-10">
                     {navLinks.map((nav) => (
                         <li
@@ -58,6 +66,8 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
+
+                {/*menu burger quando o schermo è piccolo */}
                 <div className="sm:hidden flex flex-1 justify-end items-center">
                     <img
                         src={toggle ? close : menu}
@@ -67,7 +77,7 @@ const Navbar = () => {
                     />
 
                     <div
-                        className={`${!toggle ? "hidden" : "flex"
+                        className={`${!toggle ? "hidden" : "flex flex-col gap-4"
                             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
                     >
                         <ul className="list-none flex  justify-end items-start flex-col gap-4">
@@ -84,8 +94,9 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </div>
+
             </div>
-        </nav>
+        </nav >
     )
 }
 

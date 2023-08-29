@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body{
-    background-color: #050816;
+    background-image: linear-gradient(to right bottom, #050816, #060919, #070b1c, #080c1e, #090d21, #13162d, #1e1d39, #2b2445, #4a325c, #6c4170, #914f81, #b85d8f);
 }
 
 
@@ -37,6 +37,9 @@ body{
 .bg-tertiary{
     background-color: #151030;
 }
+.heroBtn{
+    background:linear-gradient(to left top, #ee4da8, #bc479c, #8d408a, #613672, #3c2a56);
+}
 
 /* per la linea laterale del'hero */
 .pink-gradient {
@@ -67,4 +70,38 @@ body{
             #434343,
             #373434);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* DarkMode component*/
+
+/* div padre*/
+.dark_mode_button {
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+        inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.light_mode_button {
+    content: "";
+       background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.dark_mode_button svg {
+    
+    z-index: 100;
+}
+
+.Sun {
+    fill: #fff;
+    transition: 0.3s;
+    
+}
+.moon {
+    fill: #7e7e7e;
+    transition: 0.3s;
 }

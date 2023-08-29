@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { BrowserRouter } from 'react-router-dom'
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
@@ -9,9 +10,10 @@ import Tech from './Components/Tech';
 
 
 function App() {
+
   return (
     <BrowserRouter>
-      <div className="relative z-0" >
+      <div className="relative z-0 " >
         <div className="bg-hero">
           <Navbar />
           <Hero />
