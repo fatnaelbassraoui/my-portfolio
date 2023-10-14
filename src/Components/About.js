@@ -53,13 +53,9 @@ const About = () => {
                 <p className={`${styles.sectionHeadText} `}>Introduction</p>
             </div>
             <p className=" mt-4 ml-2 text-secondary text-[17px] max-w-3xl leading-[30px]">
-                In 2021, I decided to change jobs because my growth and career
-                expectations were not what I expected. Instead, I saw it in the coding
-                world, where I always feel stimulated, and the work is never too
-                monotonous. In addition, I discovered my passion for the development
-                world and the beauty behind building useful websites like the ones you
-                will find in this portfolio. I am now looking for a developer position
-                to finally kick-start my career and learn among professionals.
+                A few years ago I discovered the world of programming and bought Jon Duckett's manual and started writing my first code, and it was love at first  tag. In love with the world of development and the incredible opportunities it offers, I decided to turn my life around and turn my passion into a career by enrolling in Epicode's intensive bootcamp.
+                I have excellent interpersonal and communication skills gained from my experience in the administrative field, as well as excellent interpersonal, teamwork and problem-solving skills.
+                I am currently looking for a work environment that will allow me to cultivate this passion and grow professionally.
             </p>
             <div className=" mt-20 flex flex-wrap justify-center items-center gap-10">
                 <div className="mt-20 flex flex-wrap  md:flex-row gap-10 justify-center items-center">
